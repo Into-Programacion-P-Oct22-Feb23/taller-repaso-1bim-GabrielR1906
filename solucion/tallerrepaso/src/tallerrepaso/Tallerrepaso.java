@@ -56,13 +56,13 @@ public class Tallerrepaso {
 
             totalm = horasm * 10;
             totaln = horasn * 15;
-            subtotal = totalm + totaln;
             
             if (horasn >= 10) {
                 adicional = totaln * 0.10;
                 totaln = totaln + adicional;
             }
-            segurosocial = (totaln + totalm) * 0.18;
+            subtotal = totalm + totaln;
+            segurosocial = subtotal * 0.18;
             total = (totaln + totalm) - segurosocial;
             
             mensaje = mensaje + "Rol del trabajador de nombre " + nombre
