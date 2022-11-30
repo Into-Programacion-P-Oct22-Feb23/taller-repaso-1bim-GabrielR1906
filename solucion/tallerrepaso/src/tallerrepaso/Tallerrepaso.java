@@ -56,10 +56,10 @@ public class Tallerrepaso {
 
             totalm = horasm * 10;
             totaln = horasn * 15;
-            subtotal = horasm + horasn;
+            subtotal = totalm + totaln;
             
             if (horasn >= 10) {
-                adicional = totaln * 10;
+                adicional = totaln * 0.10;
                 totaln = totaln + adicional;
             }
             segurosocial = (totaln + totalm) * 0.18;
@@ -69,7 +69,7 @@ public class Tallerrepaso {
                     + " y cedula " + cedula + ".\n\t" + "Horas matutinas "
                     + "trabajadas: " + horasm + ".\n\t" + "Horas nocturnas"
                     + " trabajadas: " + horasn + ".\n\t" + "Subtotal: $" 
-                    + subtotal + "Seguro social $" + segurosocial + "\n\t"
+                    + subtotal + "\n\tSeguro social $" + segurosocial + "\n\t"
                     + "Total a cancelar $" + total + "\n\n";
             
             numeroempleados = numeroempleados + 1;
